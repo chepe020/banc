@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { cancelTransfer, createTransfer, updateTransfer } from './transfer.controller.js';
-import { validatejwt } from "../middlewares/validate-JWT.js";
+import { validatejwt } from "../middlewares/validate-jwt.js";
 import { validateTransferBase, validateTransferLimits, validateTransferEditable, validateTransferCancelable } from '../middlewares/validate-Transfer.js';
 
 const router = Router();
