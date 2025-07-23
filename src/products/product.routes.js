@@ -1,5 +1,5 @@
 import { validarCampos } from "../middlewares/validate-campos.js";
-import { validatejwt } from "../middlewares/validate-JWT.js";
+import { validatejwt } from "../middlewares/validate-jwt.js";
 import { Router } from "express";
 import { check } from "express-validator";
 import { validateAdmin } from "../middlewares/validator-users.js"; 
