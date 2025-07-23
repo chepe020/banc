@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6842f2ebcf01beca4e14db0f"
+  },
+  "keeperUser": {
+    "$oid": "6842f2ebcf01beca4e14db0c"
+  },
+  "typeAccount": "EMPRESARIAL",
+  "noAccount": "2406084182",
+  "balance": 1001,
+  "points": 7,
+  "createdAt": {
+    "$date": "2025-06-06T13:53:47.140Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T13:55:42.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6842f30ccf01beca4e14db20"
+  },
+  "keeperUser": {
+    "$oid": "6842f30ccf01beca4e14db1d"
+  },
+  "typeAccount": "NORMAL",
+  "noAccount": "5401484935",
+  "balance": 0,
+  "points": 0,
+  "createdAt": {
+    "$date": "2025-06-06T13:54:20.884Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T13:54:20.884Z"
+  }
+}]

@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "68425259cecd3111554de0c6"
+  },
+  "name": "Admin",
+  "username": "admin",
+  "dpi": "3976668450101",
+  "direction": "Admin Address",
+  "phone": "00000000",
+  "email": "admin@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$iXaCeKxAOjBGVf9SWsSI/A$AS67CURn21FbKlkFiZDy3LYuqg+1qgIdGB4E6uKLj+Y",
+  "work": "Admin",
+  "income": 1000,
+  "role": "ADMIN_ROLE",
+  "typeAccount": "NORMAL",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-06-06T02:28:41.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T02:28:41.020Z"
+  },
+  "noAccount": "6732291534"
+},
+{
+  "_id": {
+    "$oid": "6842f2ebcf01beca4e14db0c"
+  },
+  "name": "Peralta",
+  "username": "Anjoga",
+  "direction": "Lago de amatitlan",
+  "phone": "58694128",
+  "email": "pepa@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Sk7rTBOKJJnyHfzukKCkUA$uIGv7ZzmxAPcD8bhp1cxryWN+edC4CluE1KjsJvx9Zc",
+  "nombreEmpresa": "Braulio.CO",
+  "income": 101,
+  "role": "USER_ROLE",
+  "typeAccount": "EMPRESARIAL",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-06-06T13:53:47.130Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T13:53:47.130Z"
+  },
+  "noAccount": "2406084182"
+},
+{
+  "_id": {
+    "$oid": "6842f30ccf01beca4e14db1d"
+  },
+  "name": "Joaquin",
+  "username": "joaki",
+  "dpi": "1234567890364",
+  "direction": "En su casa",
+  "phone": "00112233",
+  "email": "joaki@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$NcOdQaqyZjcMI65J69b9PA$2OO74FB1RaX0XMZZn8lu5yPLvvCuTkdmy6ob00WfspI",
+  "work": "kinal",
+  "income": 101,
+  "role": "USER_ROLE",
+  "typeAccount": "NORMAL",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-06-06T13:54:20.878Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T13:54:20.878Z"
+  },
+  "noAccount": "5401484935"
+}]

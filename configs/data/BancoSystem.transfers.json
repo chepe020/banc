@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "6848f88d787ad2b82d489394"
+  },
+  "fromUser": {
+    "$oid": "6847ac958424d2dd4b79be98"
+  },
+  "toAccount": "2406084182",
+  "amount": 2000,
+  "description": "Pago actualizado",
+  "createdAt": {
+    "$date": "2025-06-11T03:31:25.169Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-11T03:33:26.146Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6848fb4a5a468512f3d34b2e"
+  },
+  "fromUser": {
+    "$oid": "6847ac958424d2dd4b79be98"
+  },
+  "toAccount": "5401484935",
+  "amount": 2000,
+  "description": "Pago de vvxcxcxx",
+  "createdAt": {
+    "$date": "2025-06-11T03:43:06.148Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-11T03:43:06.148Z"
+  }
+}]

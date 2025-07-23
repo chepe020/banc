@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "684f0a5d1a22fdec38b27b13"
+  },
+  "keeperUser": {
+    "$oid": "6842f2ebcf01beca4e14db0c"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "684f08321a22fdec38b27b05"
+      },
+      "quantity": 5,
+      "_id": {
+        "$oid": "684f0a5d1a22fdec38b27b14"
+      }
+    },
+    {
+      "product": {
+        "$oid": "684f08f71a22fdec38b27b0a"
+      },
+      "quantity": 2,
+      "_id": {
+        "$oid": "684f0a5d1a22fdec38b27b15"
+      }
+    }
+  ],
+  "totalTransaccion": 35,
+  "status": true,
+  "date": {
+    "$date": "2025-06-15T18:01:01.362Z"
+  },
+  "__v": 0
+}]

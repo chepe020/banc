@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "684f0a5d1a22fdec38b27b18"
+  },
+  "account": {
+    "$oid": "6842f2ebcf01beca4e14db0f"
+  },
+  "user": {
+    "$oid": "6842f2ebcf01beca4e14db0c"
+  },
+  "total": 35,
+  "createdAt": {
+    "$date": "2025-06-15T18:01:01.373Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-15T18:01:01.373Z"
+  }
+}]
