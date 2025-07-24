@@ -25,7 +25,7 @@ const historySchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'Transfer'
         }
-    },
+    }, 
     {
         timestamps: true,
         versionKey: false

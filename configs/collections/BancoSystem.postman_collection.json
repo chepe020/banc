@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8b5109fb-2954-4074-89d0-1505b9d3e4fc",
+		"_postman_id": "f3d23e38-261a-4726-8a5f-5119ad237282",
 		"name": "BancoSystem",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37413968"
@@ -432,7 +432,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODRhNGNlMjE4MzJjMzFmNWM5OWMzMjAiLCJpYXQiOjE3NTE0MjgyNzMsImV4cCI6MTc1MTQ0NjI3M30.7hZnI19-XVFff6_tBIPjPYlqyMnHWe8YcfUOYKtWBX8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODRhNGNlMjE4MzJjMzFmNWM5OWMzMjAiLCJpYXQiOjE3NTMzMjAxMjEsImV4cCI6MTc1MzMzODEyMX0.BQ1nc-frqjb9EDaYvNYNogFJrlm2iykglugD15bWLr8",
 								"type": "text"
 							}
 						],
@@ -539,7 +539,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODRhNGNlMjE4MzJjMzFmNWM5OWMzMjAiLCJpYXQiOjE3NTE0MjM5OTcsImV4cCI6MTc1MTQ0MTk5N30.evQT310Yqmdhf_Y94ma0UcQVqzY1KWVdUncPvvi6iE8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODRhNGNlMjE4MzJjMzFmNWM5OWMzMjAiLCJpYXQiOjE3NTMzMjAxMjEsImV4cCI6MTc1MzMzODEyMX0.BQ1nc-frqjb9EDaYvNYNogFJrlm2iykglugD15bWLr8",
 								"type": "text"
 							}
 						],
@@ -553,7 +553,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/BancoSystem/v1/favorites/deleteFavorite/6864982c0b13ac44fdd8f6a6",
+							"raw": "http://localhost:8080/BancoSystem/v1/favorites/deleteFavorite/6864aed0fef0f277605c4731",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -564,7 +564,7 @@
 								"v1",
 								"favorites",
 								"deleteFavorite",
-								"6864982c0b13ac44fdd8f6a6"
+								"6864aed0fef0f277605c4731"
 							],
 							"query": [
 								{
@@ -1024,6 +1024,89 @@
 								"products",
 								"deleteProduct",
 								"684e2da53dd4483e4543f9c6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Depositos",
+			"item": [
+				{
+					"name": "CreateDeposito",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQ0OGZhMDZjNGVkYTg5ZmJiMzkzYjEiLCJpYXQiOjE3NTMzMTk3NTMsImV4cCI6MTc1MzMzNzc1M30.7qrpj1x20K6-81y7dKOKUGFbXTY3A3ohRMU_pMbzs3w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"noAccount\" : \"6304724172\",\r\n    \"monto\" : 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/BancoSystem/v1/deposito/createDeposito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BancoSystem",
+								"v1",
+								"deposito",
+								"createDeposito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "viewDepositos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQ0OGZhMDZjNGVkYTg5ZmJiMzkzYjEiLCJpYXQiOjE3NTMzMTk3NTMsImV4cCI6MTc1MzMzNzc1M30.7qrpj1x20K6-81y7dKOKUGFbXTY3A3ohRMU_pMbzs3w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/BancoSystem/v1/deposito/getDepositos?searchByNoAccount=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BancoSystem",
+								"v1",
+								"deposito",
+								"getDepositos"
+							],
+							"query": [
+								{
+									"key": "searchByNoAccount",
+									"value": ""
+								}
 							]
 						}
 					},

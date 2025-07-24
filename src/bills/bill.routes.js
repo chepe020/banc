@@ -8,7 +8,7 @@ const router = Router()
 router.get(
     "/:id",
     [
-        validatejwt,  // Se quito CHECK
+        validatejwt,  
         validarCampos
     ],
     getBillByUser

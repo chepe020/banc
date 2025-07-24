@@ -9,6 +9,7 @@ import {
 import { validarCampos } from "../middlewares/validate-campos.js";
 import { validatejwt } from "../middlewares/validate-jwt.js";
 import { validateAdmin } from "../middlewares/validator-users.js"; 
+import { validateConfirmDelete } from "../middlewares/validate-favorites.js";
 
 const router = Router();
 
@@ -38,7 +39,7 @@ router.put(
 
 router.delete(
     "/deleteFavorite/:id",
-    [validatejwt, validarCampos],
+    [validatejwt, validateConfirmDelete, validarCampos],
     deleteFavorite
 );
 

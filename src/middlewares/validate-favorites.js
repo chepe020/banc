@@ -32,3 +32,26 @@ export const validateUpdateAlias = [
     check("favoriteAccountId", "favoriteAccountId is required and must be a valid Mongo ID").isMongoId(),
     check("alias", "alias must be a non-empty string").isString().notEmpty()
 ];
+
+
+export const validateConfirmDelete = (req, res, next) => {
+    const { confirm } = req.body;
+
+    try {
+        if (!confirm){
+            return res.status(400).json({
+                success: false,
+                msg: "Confirmación requerida"
+            });
+        }
+
+    } catch (error) {
+        return res.status(400).json({
+            success: false,
+            msg: "Error al editar favorito",
+            error: error.message,
+        })
+    }
+
+    next();
+};

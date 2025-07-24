@@ -7,14 +7,8 @@ export const addFavorite = async (req = request, res = response) => {
     const userId = req.usuario._id;
     const {alias, noAccount} = req.body;
     const acount = await Account.findOne({noAccount: noAccount});
-    console.log(acount);
+
     try {
-        if (!userId) {
-            return res.status(400).json({
-                success: false,
-                msg: "El ID del usuario es requerido"
-            });
-        }
         const favorites = new Favorite({
             user : userId,
             favoriteAccount: acount._id,
@@ -121,15 +115,8 @@ export const editFavorite = async (req = request, res = response) => {
 
 export const deleteFavorite = async (req = request, res = response) => {
     const { id } = req.params;
-    const { confirm } = req.body;
-    try {
-        if (!confirm){
-            return res.status(400).json({
-                success: false,
-                msg: "Confirmación requerida"
-            });
-        }
 
+    try {
         const deletedFavorite = await Favorite.findByIdAndUpdate(id , { isFavorite: false }, { new: true });
 
         res.status(200).json({
@@ -137,6 +124,7 @@ export const deleteFavorite = async (req = request, res = response) => {
             msg: "Favorite removed successfully",
             deletedFavorite
         });
+        
     } catch (error) {
         res.status(500).json({
             success: false,
